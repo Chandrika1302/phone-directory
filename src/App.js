@@ -1,39 +1,50 @@
-import React, {Component} from 'react';
-import Header from './Header';
+import React, { Component } from 'react';
+import Header from './Header.js';
 import './App.css';
-class App extends Component{
-  render(){
-    let subscribers=[
+
+class App extends Component {
+
+  render() {
+
+    let subscribers = [
       {
-        id:1,
-        name:"Chandrika",
-        phone:"7777777777"
+        id: 1,
+        name: "Shilpa Bhat",
+        phone: "8888888888"
       },
       {
-        id:2,
-        name:"Sumeetha",
-        phone:"6666666666"
+        id: 2,
+        name: "Srishti Gupta",
+        phone: "9999999999"
       }
     ];
+
     return (
       <div>
-        <Header/>
-         <button className="add-btn">Add</button>
-         <div className="user-headingDetails">
-            <span>NAME</span>
-            <span>PHONE</span>
-         </div>
-         {
-           subscribers.map(sub =>{
-             return  <div className="user-details" key={sub.id}>
-             <span>{sub.name}</span>
-             <span>{sub.phone}</span>
-          </div> 
+        <Header />
+        <div className="component-body-container">
+          <button className="custom-btn add-btn">Add</button>
 
-           })
-         }
+          <div className="grid-container heading-container">
+            <span className="grid-item name-heading">Name</span>
+            <span className="grid-item phone-heading">Phone</span>
+          </div>
+
+          {
+            subscribers.map(sub => {
+              return <div key={sub.id} className="grid-container">
+                <span className="grid-item">{sub.name}</span>
+                <span className="grid-item">{sub.phone}</span>
+                <span className="grid-item action-btn-container">
+                  <button className="custom-btn delete-btn">Delete</button>
+                </span>
+              </div>
+            })
+          }
+        </div>
       </div>
     );
   }
 }
+
 export default App;

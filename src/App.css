@@ -1,35 +1,48 @@
-.add-btn{
-    padding:15px 30px ;
-    margin: 35px;
-    background-color: #5eaf28;
-    color: #fff;
+.component-body-container {
+    padding: 20px;
+}
+
+.custom-btn {
+    padding: 10px;
+    border: none;
     text-transform: uppercase;
-    font-size: medium;
-    font-weight:bolder;
-    border: 0;
+    font-size: 0.9rem;
     cursor: pointer;
+    outline: none;
 }
-.user-headingDetails{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    margin-left: 35px;
-    font-family: bold;
-    font-weight:bolder;
-    color: #747574;
-    font-size: large;
-    cursor: pointer;
-    
+
+.add-btn {
+    background: #7ab97a;
+    color: #fff;
 }
-.user-details{
-    font-family: sans-serif;
-    margin-top: 30px;
-    color: black;
-    font-weight: normal;
-    display: flex;
-    justify-content: space-between;
-    width: 41.3%;
-    margin-left: 35px;
-    
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    margin-bottom: 30px;
+}
+
+.heading-container {
+    margin: 30px 0 30px 0;
+    width: 100%;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.15rem;
+    word-wrap: break-word;
+    padding-right: 10px;
+}
+
+.name-heading, .phone-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #808080;
+    text-transform: uppercase;
+}
+
+.delete-btn {
+    background: #fa9c9c;
+    color: #000;
     
 }
