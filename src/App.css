@@ -9,7 +9,7 @@
     border: 0;
     cursor: pointer;
 }
-.user-details{
+.user-headingDetails{
     display: flex;
     justify-content: space-between;
     width: 40%;
@@ -17,7 +17,19 @@
     font-family: bold;
     font-weight:bolder;
     color: #747574;
-    text-transform: uppercase;
     font-size: large;
     cursor: pointer;
+    
+}
+.user-details{
+    font-family: sans-serif;
+    margin-top: 30px;
+    color: black;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    width: 41.3%;
+    margin-left: 35px;
+    
+    
 }
